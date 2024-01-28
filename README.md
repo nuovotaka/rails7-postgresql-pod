@@ -1,5 +1,5 @@
 ```
-podman compose run web rails new . --force --skip-bundle
+podman compose run web rails new . --force --database=postgresql --skip-bundle
 
 ```
 
