@@ -1,24 +1,23 @@
-# README
+Podman compose で　 rails 環境を構築する
+Host は　 macos(intel)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+podman で作成される db は``postgresql`です
 
-Things you may want to cover:
+```
+podman compose build
+```
 
-* Ruby version
+```
+podman compose up -d
+```
 
-* System dependencies
+```
+podman compose run bash
+bin/rails db:create
+exit
+```
 
-* Configuration
+podman desktop で web のゴミを削除
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`localhost:3000`でアクセス
+初期画面が表示されると思います。
