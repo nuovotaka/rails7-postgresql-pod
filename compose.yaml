@@ -4,7 +4,7 @@ services:
     environment:
       POSTGRES_USER: ps
       POSTGRES_PASSWORD: password
-      TZ: "Asiz/Tokyo"
+      TZ: "Asia/Tokyo"
     networks:
       - back-tier
   frontend:
@@ -21,7 +21,7 @@ services:
     environment:
       - DB_HOST=backend
       - DB_PORT=5432
-      - DB_USER=postgres
+      - DB_USER=ps
       - DB_PASSWORD=password
     networks:
       - front-tier
