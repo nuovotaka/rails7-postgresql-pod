@@ -1,47 +1,24 @@
-```
-podman compose run web rails new . --force --database=postgresql --skip-bundle
+# README
 
-```
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-一旦、control + c でストップし
+Things you may want to cover:
 
-```
-podman compose run web bash
-bundle install
-```
+* Ruby version
 
-db のユーザー名とパスワードを指定する
+* System dependencies
 
-```
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  host: db
-+  username: ps
-+  password: password
-...
-production:
-  <<: *default
-  database: myapp_production
--  username: myapp
--  password: <%= ENV["MYAPP_DATABASE_PASSWORD"] %>
+* Configuration
 
-```
+* Database creation
 
-```
-podman compose up
-```
+* Database initialization
 
-`localhost:3000`にブラウザでアクセス
+* How to run the test suite
 
-```
-podman compose run web bash
-bundle install
-bin/rails db:create
-```
+* Services (job queues, cache servers, search engines, etc.)
 
-```
-podman compose up
-```
+* Deployment instructions
 
-`localhost:3000`にブラウザでアクセス
+* ...
