@@ -5,8 +5,6 @@ services:
       POSTGRES_USER: ps
       POSTGRES_PASSWORD: password
       TZ: "Asiz/Tokyo"
-    volumes:
-      - ./data/db:/var/lib/postgresql/data
     networks:
       - back-tier
   frontend:
