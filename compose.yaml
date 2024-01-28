@@ -23,4 +23,4 @@ services:
       - .:/myapp
 
 volumes:
-  postgres_volume: {}
+  postgres_volume:
