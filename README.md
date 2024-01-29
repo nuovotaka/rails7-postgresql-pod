@@ -30,7 +30,7 @@ podman desktop で web のゴミを削除
 `localhost:3000`でアクセス
 初期画面が表示されると思います。
 
-pgadmin4 での db サーバーへのアクセスは
+pgadmin4 でのアクセスは
 
 ```
 メールアドレス：info@domain.com
