@@ -1,7 +1,8 @@
 Podman compose で　 rails 環境を構築する
 Host は　 macos(intel)
+podman desktop を利用します。
 
-podman で作成される db は``postgresql`です
+podman で作成される db は`postgresql`です
 
 ```
 podman compose build
@@ -12,8 +13,15 @@ podman compose up -d
 ```
 
 ```
-podman compose run bash
+podman compose run web bash
+
+```
+
+```
 bin/rails db:create
+```
+
+```
 exit
 ```
 
